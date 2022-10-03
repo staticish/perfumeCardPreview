@@ -1,0 +1,82 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.details {
+  background: white;
+  height: 430px;
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 15px;
+}
+.details > * {
+  margin-left: 20px;
+}
+.details > :nth-child(1) {
+  font-size: 17px;
+  letter-spacing: 7px;
+  margin-top: 1.5rem;
+  color: gray;
+}
+.details > :nth-child(2) {
+  font-size: 37px;
+  font-weight: bold;
+}
+
+.details > :nth-child(3) {
+  color: gray;
+  letter-spacing: 2px;
+  line-height: 17px;
+}
+.details > :nth-child(4) {
+  margin-left: 1.3rem;
+}
+.details > :nth-child(4) > :nth-child(1) {
+  color: darkgreen;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.details > :nth-child(4) > :nth-child(2) {
+  text-decoration-line: line-through;
+  color: grey;
+}
+button {
+  background: green;
+  border: none;
+  width: 14rem;
+  padding: 0.4rem;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background: darkgreen;
+}
+body {
+  background: rgb(243, 234, 227);
+}
+@media only screen and (min-width: 700px) {
+  .mob {
+    display: none;
+  }
+}
+@media only screen and (max-width: 699px) {
+  .desk {
+    display: none;
+  }
+  .mob {
+    position: relative;
+    top: 10.4rem;
+    width: 17rem;
+  }
+}
